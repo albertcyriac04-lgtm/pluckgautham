@@ -1,0 +1,58 @@
+{
+  "featured": [
+    {
+      "name": "TrashPort",
+      "year": "2026",
+      "role": "Final-year MCA project · team of four",
+      "blurb": "An on-demand smart waste collection platform. Citizens pin a pickup location, collectors accept and fulfil it, and admins watch live collector movement across the city. Includes a weight-based payment system, gig-style collector payouts, and an in-app NLP assistant for customer support and navigation.",
+      "stack": ["Django", "DRF", "PostgreSQL", "AWS", "Google Maps API", "Firebase", "spaCy"],
+      "links": [{ "label": "View on GitHub", "url": "https://github.com/albertcyriac04-lgtm/TrashPort" }]
+    },
+    {
+      "name": "BillWise",
+      "year": "2026",
+      "role": "RAG pipeline for invoices",
+      "blurb": "An invoice and bill extractor built around a hybrid structured-RAG pipeline. Instead of chunking raw text, it converts every bill into structured JSON first — which is what makes accurate cross-bill queries and arithmetic aggregation (totals, comparisons across months) actually reliable.",
+      "stack": ["FastAPI", "React", "Vite", "Llama 3 (Groq)", "pypdf", "Tailwind"],
+      "links": [
+        { "label": "View live", "url": "https://billinfoextractorusingrag.vercel.app" },
+        { "label": "View on GitHub", "url": "https://github.com/albertcyriac04-lgtm/bill_info_extractor_using_RAG" }
+      ]
+    },
+    {
+      "name": "NutriDiet",
+      "year": "2026",
+      "role": "Capstone project",
+      "blurb": "An AI-powered nutrition management system with food logging, weight and water tracking, and generated diet plans. Runs on a Gemini 2.0 Flash → Groq fallback chain so the assistant keeps responding even when one provider is rate-limited, backed by a small scikit-learn layer for recommendations.",
+      "stack": ["Django 5", "MySQL", "Gemini 2.0 Flash", "Groq", "Scikit-learn", "React", "Vite"],
+      "links": []
+    }
+  ],
+  "appliedML": [
+    {
+      "name": "SalaryPredictor",
+      "desc": "Simple linear regression from years of experience, with a live regression line and model stats.",
+      "url": "https://slr-eight.vercel.app"
+    },
+    {
+      "name": "IncomePredictor",
+      "desc": "Multiple linear regression from age and experience, showing R², RMSE and coefficients.",
+      "url": "https://mlr-sepia.vercel.app"
+    },
+    {
+      "name": "PolyPredict",
+      "desc": "Degree-3 polynomial regression capturing non-linear, mid-career salary growth.",
+      "url": "https://poly-ruddy-six.vercel.app"
+    },
+    {
+      "name": "Iris Classifier — Logistic Regression",
+      "desc": "Multi-class classification on the Iris dataset with per-class confidence scores.",
+      "url": "https://logistic-pearl.vercel.app"
+    },
+    {
+      "name": "Iris Classifier — KNN",
+      "desc": "K-nearest neighbours (k=5) on the same dataset, run side by side with the LR model for comparison.",
+      "url": "https://knn-ruby.vercel.app"
+    }
+  ]
+}

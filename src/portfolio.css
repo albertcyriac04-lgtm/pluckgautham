@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+.pf-root {
+  --paper: #f6f5f1;
+  --ink: #17181c;
+  --slate: #5b6472;
+  --indigo: #2a4173;
+  --line: #d9d7ce;
+  --gold: #a87a1e;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  min-height: 100vh;
+  line-height: 1.55;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pf-root[data-theme="dark"] {
+  --paper: #15161a;
+  --ink: #eceae4;
+  --slate: #9a9ea8;
+  --indigo: #86a2e0;
+  --line: #33353d;
+  --gold: #d9ad5a;
+}
+
+.pf-root * {
+  box-sizing: border-box;
+}
+
+.pf-serif {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.pf-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pf-rule {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+.pf-section {
+  padding: 56px 0;
+}
+
+.pf-link {
+  color: var(--indigo);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.pf-link:hover {
+  text-decoration-color: var(--indigo);
+}
+
+.pf-link:focus-visible,
+.pf-root a:focus-visible,
+.pf-root button:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.pf-reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pf-reveal.pf-shown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pf-tag {
+  font-size: 0.8rem;
+  color: var(--slate);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+.pf-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-right: 8px;
+  flex: none;
+}
+
+.pf-theme-toggle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--slate);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.pf-theme-toggle:hover {
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .pf-section {
+    padding: 40px 0;
+  }
+}
